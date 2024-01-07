@@ -69,14 +69,14 @@ export default function DashboardMain() {
       </div>
       {/* graph chart */}
       <div className="md:w-[35%] w-[85%] h-[30%] md:h-[95%]  bg-black rounded-lg ">
-        <div className="w-full h-20 md:h-10 flex flex-col md:flex-row pt-8">
+        <div className="w-full h-20 md:h-14 flex flex-col md:flex-row">
           <div className="md:w-[70%] w-full h-full flex justify-end items-center  text-center pe-5  md:pt-0">
             <p className="font-semibold text-xs w-full text-white">
               Day wise comparison
             </p>
           </div>
-          <div className="w-[50%] md:w-[30%] h-full flex justify-center items-center pe-3 content-center">
-            <button className="w-fit px-3 h-6 rounded-md text-xs text-black bg-white">
+          <div className="w-[50%] md:w-[30%] h-full flex justify-center items-center ps-5 md:ps-0 pe-3 content-center">
+            <button className="w-fit px-3 h-6  font-semibold rounded-md text-xs text-black bg-white">
               Day
             </button>
             <button className="w-fit px-3 h-6 rounded-md text-xs text-white">

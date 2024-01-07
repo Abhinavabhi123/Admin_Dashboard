@@ -15,8 +15,8 @@ const DataCard: React.FC<values> = ({ item, Icon }) => {
         ) : null}   
       </div>
       <div className="w-full h-[30%] flex gap-1 justify-center items-center">
-        <p className={`text-sm md:text-base text-wrap ${item?.color}`}>{item?.value}</p>
-        {item?.currency && <p className="md:text-sm text-xs text-white">{item.currency}</p>}
+        <p className={`text-[10px] md:text-base text-wrap overflow-hidden ${item?.color}`}>{item?.value}</p>
+        {item?.currency && <p className="text-[10px] md:text-base overflow-hidden text-white">{item.currency}</p>}
       </div>
       {item?.footer ? (
         <div>

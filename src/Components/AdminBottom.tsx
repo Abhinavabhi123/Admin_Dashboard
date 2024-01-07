@@ -42,10 +42,7 @@ export default function AdminBottom() {
               </div>
             </div>
           </div>
-          {/* <div className="h-full md:w-[50%] w-full flex justify-center items-center pe-4"> */}
           <DonutChart />
-          {/* </div> */}
-
           <div className="w-full h-20 bg-transparent md:hidden flex text-[12px] justify-center items-center gap-4 px-4 text-white">
             <div className="flex items-center gap-2">
               <div className="w-[10px] h-[10px] bg-[#00b3b3]"></div>

@@ -1,7 +1,6 @@
 import { FormEvent, useState } from "react";
 import { adminData } from "../Services/Constants";
 import { showErrorToast, showSuccessToast } from "./ToastMessage/Toasts";
-import { Toaster } from "react-hot-toast";
 import { AdminDataType } from "../Types";
 import { useNavigate } from "react-router-dom";
 import { BsEyeFill,BsEyeSlashFill } from "react-icons/bs"; 
@@ -78,7 +77,7 @@ export default function LoginForm() {
         <b className="bg-transparent">terms of service</b> and{" "}
         <b className="bg-transparent"> Privacy policy</b>
       </p>
-      <Toaster />
+    
     </form>
   );
 }
