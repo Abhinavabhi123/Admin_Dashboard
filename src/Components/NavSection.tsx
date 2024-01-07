@@ -66,7 +66,7 @@ export default function NavSection() {
         </button>
       </div>
       <div
-        className={`w-full h-80 bg-transparent absolute flex md:hidden ${
+        className={`w-full h-80 bg-slate-500 bg-opacity-45 absolute flex md:hidden ${
           menuOpen ? "flex" : "hidden"
         }  top-16 left-0  justify-center items-center`}
       >

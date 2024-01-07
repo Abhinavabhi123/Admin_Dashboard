@@ -11,7 +11,7 @@ export default function DonutChart() {
       type: "donut",
     },
     legend: {
-      show: false, // Setting this to false will hide the legend
+      show: false,
     },
     colors: ["#bf4080", "#ff751a", "#ffff66", "#00b3b3"],
     plotOptions: {
@@ -20,11 +20,9 @@ export default function DonutChart() {
           labels: {
             show: false,
           },
-          radius: '60%',
         },
         expandOnClick: true,
       },
-      
     },
   };
   return (

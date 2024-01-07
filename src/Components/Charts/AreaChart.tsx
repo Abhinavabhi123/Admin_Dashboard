@@ -5,29 +5,20 @@ import { price } from "../../Services/Constants";
 
 
 const AreaChart = () => {
-  // const getChartHeight = () => {
-  //   const windowWidth = window.innerWidth;
-  //   if (windowWidth < 768) {
-  //     return 300; // Set a smaller height for mobile view
-  //   } else if (windowWidth >= 768 && windowWidth < 1024) {
-  //     return 400; // Set a medium height for tablet view
-  //   } else {
-  //     return 500; // Set a larger height for desktop view
-  //   }
-  // };
-
-  // Sample data for the area chart
+  const areaColors = ['#33ff33'];
   const series = [
     {
       name: "price",
       data: price,
       labels: {
-        show: false 
+        show: false,
+      },
+      fill: {
+        type: "solid",
       },
     },
   ];
-
-  // Configuration options for the area chart
+  
   const options = {
     chart: {
       type: "area",
@@ -35,16 +26,14 @@ const AreaChart = () => {
       toolbar: {
         show: false,
       },
-      // height: getChartHeight()
+      distributed: true,
     },
+    colors: areaColors,
     xaxis: {
       categories: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
       axisBorder: {
         show: false,
       },
-    },
-    fill: {
-      colors: ['#F44336', '#E91E63', '#9C27B0']
     },
     dataLabels: {
       enabled: false,

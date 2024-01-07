@@ -2,16 +2,15 @@
 import ReactApexChart from "react-apexcharts";
 import { salesChartData } from "../../Services/Constants";
 
-import fr from "apexcharts/dist/locales/fr.json";
+
 const BarChart = () => {
-  // Sample data for the bar chart
   const series = [
     {
       name: "Sales",
       data: salesChartData[1].map(Number),
     },
   ];
-  // Configuration options for the bar chart
+
   const options = {
     chart: {
       type: "bar",
@@ -19,18 +18,17 @@ const BarChart = () => {
       toolbar: {
         show: false,
       },
-      locales: [fr],
-      defaultLocale: "fr",
+
     },
     plotOptions: {
       bar: {
         horizontal: true,
         columnWidth: "30%",
         endingShape: "rounded",
-       
-        // colors: ['#FF5733', '#33FF57', '#3357FF', '#FF33A1', '#33FFFF', '#FF33FF'],
+        distributed: true,
       },
     },
+    colors: ['#8c1aff', '#cc33ff', '#ff3399', '#ffff80', '#ffa366','#ff6666'],
     stroke: {
       show: false,
       width: 20,
@@ -56,13 +54,13 @@ const BarChart = () => {
     dataLabels: {
       enabled: true,
       formatter: (val: number) => {
-        return `${val} AED`; 
+        return `${val} AED`;
       },
       style: {
-        fontSize: '10px', // Set font size to 12 pixels
+        fontSize: "10px", 
       },
     },
-
+    
   };
 
   return (
