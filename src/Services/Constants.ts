@@ -79,3 +79,5 @@ export const latestSell:Item[]=[
   {item:"Budget meals",color:"bg-yellow-500",price:"44 AED/15 pc",percentage:40},
   {item:"Goto service",color:"bg-blue-500",price:"33 AED/22 pc",percentage:90}
 ]
+
+export const chartData=[15, 30, 25, 40];

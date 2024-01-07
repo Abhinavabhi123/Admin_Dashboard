@@ -5,6 +5,17 @@ import { price } from "../../Services/Constants";
 
 
 const AreaChart = () => {
+  // const getChartHeight = () => {
+  //   const windowWidth = window.innerWidth;
+  //   if (windowWidth < 768) {
+  //     return 300; // Set a smaller height for mobile view
+  //   } else if (windowWidth >= 768 && windowWidth < 1024) {
+  //     return 400; // Set a medium height for tablet view
+  //   } else {
+  //     return 500; // Set a larger height for desktop view
+  //   }
+  // };
+
   // Sample data for the area chart
   const series = [
     {
@@ -24,6 +35,7 @@ const AreaChart = () => {
       toolbar: {
         show: false,
       },
+      // height: getChartHeight()
     },
     xaxis: {
       categories: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
@@ -48,7 +60,7 @@ const AreaChart = () => {
         options={options as ApexCharts.ApexOptions}
         series={series}
         type="area"
-        height={250}
+        height={330}
       />
     </div>
   );

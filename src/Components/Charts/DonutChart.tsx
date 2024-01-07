@@ -1,7 +1,8 @@
 import ReactApexChart from "react-apexcharts";
+import { chartData } from "../../Services/Constants";
 
 export default function DonutChart() {
-  const series = [44, 55, 13, 33];
+  const series = chartData;
   const options = {
     dataLabels: {
       enabled: false,
@@ -10,17 +11,20 @@ export default function DonutChart() {
       type: "donut",
     },
     legend: {
-      enabled: false,
+      show: false, // Setting this to false will hide the legend
     },
+    colors: ["#bf4080", "#ff751a", "#ffff66", "#00b3b3"],
     plotOptions: {
       pie: {
         donut: {
           labels: {
             show: false,
           },
+          radius: '60%',
         },
         expandOnClick: true,
       },
+      
     },
   };
   return (
@@ -28,7 +32,7 @@ export default function DonutChart() {
       options={options as ApexCharts.ApexOptions}
       series={series}
       type="donut"
-      width={200}
+      height={180}
     />
   );
 }

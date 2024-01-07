@@ -12,7 +12,7 @@ export default function NavSection() {
   return (
     // Nav bar
     <div className="w-full relative h-14 bg-transparent flex justify-between items-center ps-4">
-      <div className="md:w-[15%] w-[30%] bg-transparent h-full flex justify-center items-center">
+      <div className="md:w-[15%] w-[40%] bg-transparent h-full flex justify-center items-center">
         <button className="text-white text-xs" onClick={() => navigate(-1)}>
           <IoIosArrowRoundBack size={30} />
         </button>

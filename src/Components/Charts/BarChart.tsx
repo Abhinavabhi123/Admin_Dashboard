@@ -27,6 +27,8 @@ const BarChart = () => {
         horizontal: true,
         columnWidth: "30%",
         endingShape: "rounded",
+       
+        // colors: ['#FF5733', '#33FF57', '#3357FF', '#FF33A1', '#33FFFF', '#FF33FF'],
       },
     },
     stroke: {
@@ -60,6 +62,7 @@ const BarChart = () => {
         fontSize: '10px', // Set font size to 12 pixels
       },
     },
+
   };
 
   return (
@@ -68,7 +71,7 @@ const BarChart = () => {
         options={options as ApexCharts.ApexOptions}
         series={series}
         type="bar"
-        height={200}
+        height={230}
       />
     </div>
   );

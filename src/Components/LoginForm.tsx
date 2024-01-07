@@ -40,7 +40,7 @@ export default function LoginForm() {
 
   return (
     <form
-      className="w-full md:w-[90%] h-72 bg-slate-300 bg-opacity-20 rounded-2xl flex flex-col items-center justify-center p-5 gap-3"
+      className="w-full md:w-[70%] h-72 bg-slate-300 bg-opacity-20 rounded-2xl flex flex-col items-center justify-center p-5 gap-3"
       onSubmit={(e) => formHandler(e)}
     >
       <input

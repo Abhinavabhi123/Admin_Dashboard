@@ -4,8 +4,7 @@ import AdminBottom from "../Components/AdminBottom";
 
 
 export default function Dashboard() {
-
-
+  window.scrollTo(0, 0);
   return (
     <div className="w-[100%] h-[100%] bg-primary">
       {/* Nav bar */}
