@@ -6,19 +6,20 @@ export default function AdminBottom() {
   return (
     <div className="w-full h-[51rem] md:h-72 bg-transparent flex flex-wrap justify-center items-center py-5 px-10 md:px-0">
       <div className="md:w-[90%] w-full h-[100%] bg-transparent flex items-center justify-between flex-nowrap flex-col md:flex-row gap-3">
+        {/* left section 1 */}
         <div className=" h-[40%]  md:h-[100%] w-[100%] md:w-[40%] md:ms-6 bg-black rounded-lg flex flex-col items-center md:flex-row md:p-0 md:gap-0">
           <div className="md:h-full h-[30%] md:w-[70%] w-full flex flex-col gap-5 p-6 md:p-2 text-white">
-            <p className="text-xs font-semibold w-full">
+            <p className="text-sm font-semibold w-full ps-4">
               Collection distribution
             </p>
-            <div className="w-full h-fit">
-              <p className="text-[10px]">Total amount</p>
+            <div className="w-full h-fit ps-4">
+              <p className="text-[10px] md:text-sm">Total amount</p>
               <p>
                 <b>365.61</b> AED
               </p>
             </div>
             <div className="w-full h-[30%] bg-transparent mt-10 hidden md:flex flex-col justify-center items-center">
-              <div className="w-[100%] h-[80%] flex flex-col justify-between text-[10px]">
+              <div className="w-[100%] h-[80%] flex flex-col justify-between text-[10px] ps-5">
                 <div className="w-full h-[48%] bg-transparent flex justify-center ">
                   <div className="w-full h-[80%] flex  gap-2">
                     <div className="w-[10px] h-[10px] bg-[#00b3b3]"></div>
@@ -62,6 +63,7 @@ export default function AdminBottom() {
             </div>
           </div>
         </div>
+        {/* Middle section */}
         <div className=" md:h-[100%] h-fit p-4  w-[100%] md:w-[30%] bg-black rounded-lg md:p-4">
           <div className="w-full h-8 flex items-center ps-4 text-sm py-3">
             <p className="text-white font-semibold">Top 5 selling product</p>
@@ -72,6 +74,7 @@ export default function AdminBottom() {
             })}
           </div>
         </div>
+        {/* Right section */}
         <div className=" md:h-[100%] h-fit p-4 w-[100%] md:w-[30%] bg-black rounded-lg md:p-4">
           <div className="w-full h-8 flex items-center ps-4 text-sm py-3">
             <p className="text-white font-semibold">Least 5 selling product</p>

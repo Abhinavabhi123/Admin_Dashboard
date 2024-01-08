@@ -31,6 +31,7 @@ export default function DashboardMain() {
               <BarChart />
             </div>
           </div>
+          {/* Total payment and purchase section */}
           <div className="md:h-[95%] h-48 w-[100%] md:w-[30%] bg-black  rounded-lg text-white flex flex-col justify-between items-center p-5">
             <p className="text-xs ">Total Purchase</p>
             <div>
@@ -65,6 +66,7 @@ export default function DashboardMain() {
               </div>
             </div>
           </div>
+          {/* end */}
         </div>
       </div>
       {/* graph chart */}

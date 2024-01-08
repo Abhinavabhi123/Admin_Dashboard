@@ -13,6 +13,7 @@ export default function LoginForm() {
     password: "",
   });
 
+  // Input handle function
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
 
@@ -22,6 +23,7 @@ export default function LoginForm() {
     }));
   };
 
+  // Form submitting function
   function formHandler(e: FormEvent) {
     e.preventDefault();
     if (adminData?.email !== adminDetails.email) {

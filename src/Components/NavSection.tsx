@@ -12,6 +12,7 @@ export default function NavSection() {
   return (
     // Nav bar
     <div className="w-full relative h-14 bg-transparent flex justify-between items-center ps-4">
+      {/* left section */}
       <div className="md:w-[15%] w-[40%] bg-transparent h-full flex justify-center items-center">
         <button className="text-white text-xs" onClick={() => navigate(-1)}>
           <IoIosArrowRoundBack size={30} />
@@ -20,6 +21,7 @@ export default function NavSection() {
           Branch name
         </h3>
       </div>
+      {/* Navigation list && middle section */}
       <div className="w-[35rem] h-full  md:flex justify-center items-center hidden ">
         <ul className="flex w-full h-10 list-none font-semibold justify-between items-center gap-3">
           <li
@@ -47,6 +49,7 @@ export default function NavSection() {
           </li>
         </ul>
       </div>
+      {/* right section */}
       <div className="w-20  min-[1000px]:w-[30%] h-full flex items-center justify-between pe-4 ">
         <div className="text-white text-[10px] flex gap-1">
           <p className="hidden min-[1000px]:block">Export to Excel</p>
@@ -55,8 +58,8 @@ export default function NavSection() {
         <button className="text-[10px] text-white hidden min-[1000px]:block">
           Last updated time 09-Aug-2023 08:09 AM
         </button>
-        <button className="text-white">
-          <IoSunnyOutline />
+        <button className="text-white hover:rotate-12">
+          <IoSunnyOutline size={22}/>
         </button>
         <button
           className="md:hidden  text-white"
@@ -65,6 +68,7 @@ export default function NavSection() {
           {!menuOpen ? <IoMdMenu /> : <IoMdClose />}
         </button>
       </div>
+      {/* Navigation section for mobile responsive design */}
       <div
         className={`w-full h-80 bg-slate-500 bg-opacity-45 absolute flex md:hidden ${
           menuOpen ? "flex" : "hidden"
@@ -79,11 +83,21 @@ export default function NavSection() {
             >
               Dashboard
             </li>
-            <li className="w-1/2 p-2 text-white font-semibold tracking-wider text-center rounded-md text-sm  h-fit bg-slate-400 bg-opacity-40 cursor-pointer">Sales</li>
-            <li className="w-1/2 p-2 text-white font-semibold tracking-wider text-center rounded-md text-sm  h-fit bg-slate-400 bg-opacity-40 cursor-pointer">Payment</li>
-            <li className="w-1/2 p-2 text-white font-semibold tracking-wider text-center rounded-md text-sm  h-fit bg-slate-400 bg-opacity-40 cursor-pointer">TAX</li>
-            <li className="w-1/2 p-2 text-white font-semibold tracking-wider text-center rounded-md text-sm  h-fit bg-slate-400 bg-opacity-40 cursor-pointer">MIS</li>
-            <li className="w-1/2 p-2 text-white font-semibold tracking-wider text-center rounded-md text-sm  h-fit bg-slate-400 bg-opacity-40 cursor-pointer">Purchase entry</li>
+            <li className="w-1/2 p-2 text-white font-semibold tracking-wider text-center rounded-md text-sm  h-fit bg-slate-400 bg-opacity-40 cursor-pointer">
+              Sales
+            </li>
+            <li className="w-1/2 p-2 text-white font-semibold tracking-wider text-center rounded-md text-sm  h-fit bg-slate-400 bg-opacity-40 cursor-pointer">
+              Payment
+            </li>
+            <li className="w-1/2 p-2 text-white font-semibold tracking-wider text-center rounded-md text-sm  h-fit bg-slate-400 bg-opacity-40 cursor-pointer">
+              TAX
+            </li>
+            <li className="w-1/2 p-2 text-white font-semibold tracking-wider text-center rounded-md text-sm  h-fit bg-slate-400 bg-opacity-40 cursor-pointer">
+              MIS
+            </li>
+            <li className="w-1/2 p-2 text-white font-semibold tracking-wider text-center rounded-md text-sm  h-fit bg-slate-400 bg-opacity-40 cursor-pointer">
+              Purchase entry
+            </li>
           </ul>
         </div>
       </div>

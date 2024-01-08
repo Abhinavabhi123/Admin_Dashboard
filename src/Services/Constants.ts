@@ -2,11 +2,13 @@ import { AdminDataType, Item, SalesType, Total } from "../Types";
 import { IoCalendarOutline } from "react-icons/io5";
 import { IoMdArrowDropup } from "react-icons/io";
 
+// Admin Login form data for authorization
 export const adminData: AdminDataType = {
   email: "admin@gmail.com",
   password: "123456",
 };
 
+// sales data in admin dashboard panel
 export const salesDetails: SalesType[] = [
   {
     title: "Total sales",
@@ -50,20 +52,24 @@ export const salesDetails: SalesType[] = [
   },
 ];
 
+// Sales chart data
 export const salesChartData = [
   ["Dining", "Takeaway", "Delivery", "Talabat", "Zomato", "Swiggy"],
   [94, 86, 68, 55, 51, 45],
 ];
 
+// Sales purchase and payment data
 export const total: Total = {
   purchase: { cash: "322.61", credit: "322.61" },
   payment: { cash: "322.61", cheque: "322.61" },
 };
 
+// Price data in daily basis for area chart
 export const price: number[] = [
   1000, 1500, 2000, 2300, 2100, 1800, 992, 990, 1200, 500,
 ];
 
+// Top selling product data
 export const topSailedProduct:Item[] = [
   {item:"Chicken sizzler",color:"bg-blue-500",price:"55.5 AED/5 pc"},
   {item:"Special biriyani",color:"bg-yellow-500",price:"35 AED/2 pc"},
@@ -72,6 +78,7 @@ export const topSailedProduct:Item[] = [
   {item:"Beef brisket",color:"bg-violet-500",price:"29.75 AED/3 pc"},
 ];
 
+// Least selling product data
 export const latestSell:Item[]=[
   {item:"Open item",color:"bg-violet-500",price:"55 AED/1 pc",percentage:15},
   {item:"Delivery challan",color:"bg-red-500",price:"56 AED/5 pc",percentage:20},
@@ -80,4 +87,5 @@ export const latestSell:Item[]=[
   {item:"Goto service",color:"bg-blue-500",price:"33 AED/22 pc",percentage:90}
 ]
 
-export const chartData=[15, 30, 25, 40];
+// Total amount data for donut chart
+export const chartData:number[]=[15, 30, 25, 40];

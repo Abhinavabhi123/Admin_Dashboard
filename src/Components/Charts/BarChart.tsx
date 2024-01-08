@@ -60,7 +60,6 @@ const BarChart = () => {
         fontSize: "10px", 
       },
     },
-    
   };
 
   return (
