@@ -3,7 +3,7 @@ import LoginForm from '../Components/LoginForm'
 export default function Login() {
   window.scrollTo(0, 0);
   return (
-    <div className='w-[100%] h-[100%] bg-primary'>
+    <div className='w-[100%] h-[100%] bg-primary '>
       {/* Left image side */}
         <div className='w-full h-16 bg-transparent flex items-center justify-between px-10 mb-[4.7rem]'>
             <img src="/logo.svg" alt="logo" className='w-8 md:w-10 text-white' />
