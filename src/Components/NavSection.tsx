@@ -25,14 +25,14 @@ export default function NavSection() {
       <div className="w-[35rem] h-full  md:flex justify-center items-center hidden ">
         <ul className="flex w-full h-10 list-none font-semibold justify-between items-center gap-3">
           <li
-            className={`w-28 p-2 tracking-wider text-sm cursor-pointer text-center text-blac h-full ${
+            className={`w-28 p-2 tracking-wider text-sm cursor-pointer text-center text-black h-full ${
               location.pathname === "/dashboard" &&
               "text-black bg-white rounded-md"
             }`}
           >
             Dashboard
           </li>
-          <li className="w-28 p-2 tracking-wider text-sm text-white h-full cursor-pointer">
+          <li className="w-28 p-2 tracking-wider text-sm text-white h-full cursor-pointer  hover:bg-slate-300 hover:text-white rounded-md" onClick={()=>navigate("/sales")}>
             Sales
           </li>
           <li className="w-28 p-2 tracking-wider text-sm text-white h-full cursor-pointer">
